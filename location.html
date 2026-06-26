@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://www.flaticon.com/search?word=c">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Masterial+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://fontawesome.com/search?q=wash&o=r">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Script.Js">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Style.CSS">
+    <title>We are Located at</title> 
+    <link rel="icon" href="images/logo_-removebg-preview.png">
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="ri-menu-line"></i>
+        </label>
+        <label class="logotxt">
+               <h1>Labanders</h1>
+               <img src="images/logo_-removebg-preview.png" alt="" class="logoimage"> 
+        </label>
+        <ul>     <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>     
+        </ul>
+    </nav>
+    
+
+    <div class="container">
+        <h1>We're here!</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d241.2176741938338!2d120.99147885782592!3d14.685268487838432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDQxJzA3LjQiTiAxMjDCsDU5JzI5LjkiRQ!5e0!3m2!1sen!2sph!4v1716030879175!5m2!1sen!2sph" width="600" 
+        height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="address">
+            <i class="material-symbols-outlined">pin_drop</i>
+            <h2>4003 Gen T. De Leon Valenzuela City</h2>
+        </div>
+
+    </div>
+   
+
+    
+
+    <footer>
+        <div class="footer-section">
+            <div class="footlogo">
+                <img src="images/logo_-removebg-preview.png" alt="" class="foot-logoimg">
+                <h2>Labanders</h2>
+            </div>
+            <div class="foot-icons">
+                <div class="box">
+                    <div class="f-icons">
+                        <a href="https://web.facebook.com/people/The-Labanders-Shop/61560500158469/"><i class='bx bxl-facebook-square'></i></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="f-icons">
+                        <i class='bx bxl-instagram' ></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="f-icons">
+                        <i class='bx bxl-gmail' ></i>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-contacts">
+                <div class="phone">
+                    <h1>Contact Us</h1>
+                    <i class='bx bxs-phone' ></i>
+                    <h3>+63 946 523 6824 / 8-812-79-97</h3>
+                </div>
+            </div>
+           
+        </div>
+        <div class="credit-sec">
+            <div class="credit">
+                <i class='bx bxs-copyright' ></i>
+                <h3>2024 Labanders. All Rights Reserved</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight ="0px";
+
+        function toggleMenu(){
+            let nav = document.querySelector("nav ul");
+            if(menuList.style.maxHeight =="0px"){
+                menuList.style.maxHeight ="550px";
+                nav.classList.add("nav-small");
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+                nav.classList.remove("nav-small");
+            }
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</html>
